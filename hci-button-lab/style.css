@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    background: #f8f9fa;
+}
+
+/* AFFORDANCE - Blue border */
+#actionBtn {
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 3px solid #007bff;      /* Blue – shows it's clickable */
+    background: white;
+    color: #007bff;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+#actionBtn:hover {
+    background-color: #e0e0e0;
+}
+
+/* FEEDBACK - Yellow background on click */
+#actionBtn.click-feedback {
+    background-color: #ffc107 !important; /* Yellow */
+    transform: scale(0.95);
+}
+
+/* CONSTRAINT - Red border when disabled */
+#actionBtn.constrained {
+    border-color: #dc3545 !important; /* Red */
+}
+
+/* SIGNIFIER - Purple background + opacity when disabled */
+#actionBtn.disabled-signifier {
+    background-color: #6f42c1 !important; /* Purple */
+    color: white;
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Reset button */
+#resetBtn {
+    padding: 10px 20px;
+    margin: 10px 0 10px 15px;
+    font-size: 16px;
+    border: 3px solid #6c757d;      /* Gray */
+    background: white;
+    color: #343a40;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.15s ease;
+}
+
+#resetBtn:hover {
+    background-color: #e9ecef;
+}
+
+/* MAPPING - Green border for status */
+#status {
+    margin-top: 10px;
+    border: 3px solid #28a745;       /* Green */
+    padding: 12px;
+    min-height: 24px;
+    border-radius: 4px;
+    background: #fff;
+    transition: border-color 0.4s;
+}
