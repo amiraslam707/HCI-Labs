@@ -22,8 +22,8 @@ export default function GiftBox({ textures, isOpen }) { // Added isOpen prop
     { pos: [0, -1.5, 0], rot: [Math.PI / 2, 0, 0], color: 0x00BB00 },
   ];
 
-  useFrame((state, delta) => {
-  const { mouse, clock } = state;
+  useFrame((state) => {
+  const { mouse } = state;
 
   if (groupRef.current) {
     // 1. Constant rotation (your existing logic)
